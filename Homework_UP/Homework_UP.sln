@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31129.286
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1401
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoneyParser", "MoneyParser\MoneyParser.csproj", "{004D10D8-5B13-4B9F-9D45-9D82CF28B08D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormatStrings", "FormatStrings\FormatStrings.csproj", "{F2ED01D1-70F3-4C71-9439-6F1DEF87674A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{004D10D8-5B13-4B9F-9D45-9D82CF28B08D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{004D10D8-5B13-4B9F-9D45-9D82CF28B08D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{004D10D8-5B13-4B9F-9D45-9D82CF28B08D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2ED01D1-70F3-4C71-9439-6F1DEF87674A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2ED01D1-70F3-4C71-9439-6F1DEF87674A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2ED01D1-70F3-4C71-9439-6F1DEF87674A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2ED01D1-70F3-4C71-9439-6F1DEF87674A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
