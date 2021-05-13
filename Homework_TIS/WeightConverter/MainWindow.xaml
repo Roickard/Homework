@@ -1,0 +1,35 @@
+﻿<Window x:Class="WeightConverter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WeightConverter"
+        mc:Ignorable="d"
+        Title="Using standard control elements" Height="450" Width="800">
+    <Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="300" />
+			<ColumnDefinition />
+		</Grid.ColumnDefinitions>
+		<StackPanel Grid.Column="0" Orientation="Vertical" Margin="15">
+			<StackPanel>
+				<Label Content="Weight (g):" HorizontalAlignment="Center"/>
+				<TextBox x:Name="tbWeight" Height="25" VerticalContentAlignment="Center" KeyUp="tbChanging" />
+			</StackPanel>
+			<ComboBox x:Name="cbConverterType" IsEditable="False" SelectedIndex="0" Margin="0 15" SelectionChanged="SelectionChanged">
+				<TextBlock Text="Pound (lb)" />
+				<TextBlock Text="Pood (tr)" />
+				<TextBlock Text="Ounce (oz)" />
+				<TextBlock Text="Drachm (dr)" />
+				<TextBlock Text="Grain (gr)" />
+			</ComboBox>
+			<GroupBox Header="Styles">
+				<StackPanel Margin="10">
+					<CheckBox x:Name="cbItalic" Content="Italic" Margin="0 0 0 10" Click="SwitchStyle" />
+					<CheckBox x:Name="cbRed" Content="Red" Click="SwitchStyle" />
+				</StackPanel>
+			</GroupBox>
+		</StackPanel>
+		<ListBox x:Name="lbResult" Grid.Column="1" Margin="15" />
+	</Grid>
+</Window>
